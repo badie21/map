@@ -1,1 +1,3 @@
-# map
+open terminal 
+yarn 
+yanrn start
