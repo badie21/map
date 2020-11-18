@@ -1,0 +1,40 @@
+/*---------- Smartphones----------- */
+@media only screen and (max-width: 480px) {
+	button {
+		width: 100%;
+		margin: 1rem 0;
+	}
+
+	section.container div {
+		padding: 0 1rem;
+	}
+	input[name='filter'] {
+		width: 85%;
+		padding: 0.75rem 1rem;
+	}
+	ul {
+		justify-content: center;
+	}
+	svg {
+		width: 70%;
+		height: 100%;
+	}
+	.svg-wrapper {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.content {
+		padding: 0.5rem;
+		width: 80vw;
+	}
+}
+/*---------- Tablets ----------*/
+@media only screen and (max-width: 768px) {
+	.content {
+		padding: 0.5rem;
+		width: 80vw;
+	}
+}
+@media only screen and (max-width: 1200px) {
+}
