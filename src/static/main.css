@@ -288,12 +288,31 @@ input[name='filter']::placeholder {
 /* svg css end  */
 
 /* map css */
+.map-container {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
 
-.marker {
-  background-image: url('svg/marker.svg');
-  background-size: cover;
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  cursor: pointer;
+.popup {
+	text-align: right;
+	padding: 1rem 1rem;
+}
+
+.mapboxgl-popup.mapboxgl-popup-anchor-bottom:hover {
+	z-index: 10000;
+}
+
+button.mapboxgl-popup-close-button {
+	background: #00467f;
+	color: whitesmoke;
+	padding: 0.5rem 1rem;
+	left: 0;
+	margin: 0.5rem;
+}
+button.mapboxgl-popup-close-button:hover {
+	background: #ade6e6;
+	color: #00467f;
 }

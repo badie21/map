@@ -23,7 +23,7 @@ const Search = () => {
 	const [modalState, setModalState] = useState(null);
 
 	useEffect(() => {
-		if (text.length) {
+		if (text.length > 0) {
 			Axios({
 				method: 'POST',
 				url: 'https://map.ir/search/v2',
@@ -39,6 +39,8 @@ const Search = () => {
 				console.log(res.data.value);
 				setAddressList(res.data.value);
 			});
+		} else {
+			setAddressList(null)
 		}
 	}, [text]);
 
